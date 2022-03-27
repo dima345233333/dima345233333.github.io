@@ -44,24 +44,28 @@
         <input type="submit" value="Скачать резюме">
     </div>
     
-    <div class="WhatCanIDo">
+    <div class="WhatCanDo">
         <h2>ЧТО Я УМЕЮ</h2>
-        <div class="ListWCID">
-            <ul>
-             <li>Веб-дизайн</li>
-             <li>Разработка</li>
-             <li>Ceo-оптимизация</li>
-             <li>Маркетинг</li>
-            </ul>
+        <div class="WCIDItem">
+           <div class="WCIDIcon"></div>
+           <p>Разработка</p>
+           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat, adipisci!</p> 
         </div>
-        <div class="TextWCID">
-            <ul>
-             <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis, ratione.</li>
-             <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui, tenetur.</li>
-             <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis, distinctio?</li>
-             <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis, ipsa.</li>
-            </ul>
+        <div class="WCIDItem">
+           <div class="WCIDIcon"></div>
+           <p>Веб-дизайн</p>
+           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat, adipisci!</p> 
         </div>
+        <div class="WCIDItem">
+           <div class="WCIDIcon"></div>
+           <p>CEO-оптимизация</p>
+           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat, adipisci!</p> 
+        </div>
+        <div class="WCIDItem">
+           <p>Маркетинг</p>
+           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat, adipisci!</p> 
+        </div>
+        
     </div>
     
     <div class="cases">
@@ -80,33 +84,56 @@
     <div class="CalculateCost">
      <h2>РАСЧЕТ СТОИМОСТИ</h2>
       <p>ТИП САЙТА</p>
-      
+      <div class="CalcListItem">
+      <select  name="Type">
+        <option disabled>Выберите пункт...</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+      </select></div>
       <p>ДИЗАЙН</p>
+      <div class="CalcListItem">
+      <select  name="Disign">
+        <option disabled>Выберите пункт...</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+      </select></div>
       
       <p>АДАПТИВНОСТЬ</p>
-          
+      <div class="CalcListItem">
+      <select  name="Adapt">
+        <option disabled>Выберите пункт...</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+      </select></div>
       <p>Сроки</p>
       <p>Стоимость</p>
     </div>
     
     <div class="SomeStatistics">
         <h2>НЕМНОГО СТАТИСТИКИ</h2>
-        <div class="StaticsNumbers"> 
-               <ul>
-                <li>1</li>
-                <li>1</li>
-                <li>1</li>
-                <li>1</li>
-               </ul>
-            </div>
-    <div class="StaticsText"> 
-               <ul>
-                <li>СЧАСТЛИВЫХ КЛИЕНТОВ</li>
-                <li>ЧАСОВ РАБОТЫ</li>
-                <li>ПРОЕКТОВ ЗАВЕРШЕНО</li>
-                <li>НАГРАД ПОЛУЧЕНО</li>
-               </ul>
-            </div>
+        <div class="StatItem">
+            <div class="StatIcon"></div>
+            <p>120</p>
+            <p>Счастливых клиентов</p>
+        </div>
+        <div class="StatItem">
+            <div class="StatIcon"></div>
+            <p>4600</p>
+            <p>Часов работы</p>
+        </div>
+        <div class="StatItem">
+            <div class="StatIcon"></div>
+            <p>340</p>
+            <p>Проектов завершено</p>
+        </div>
+        <div class="StatItem">
+            <div class="StatIcon"></div>
+            <p>23</p>
+            <p>Наград получено</p>
+        </div>
     </div>
     
     <div class="reviews">
@@ -114,14 +141,6 @@
         <div class="ReviewItem">
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam, quasi.</p>
             <p>Михаил, Ген. Директор Газпром</p>
-        </div>
-        <div class="ReviewItem">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam, quasi.</p>
-            <p>Сергей, Ген. Директор Газпром</p>
-        </div>
-        <div class="ReviewItem">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam, quasi.</p>
-            <p>Александр, Ген. Директор Газпром</p>
         </div>
     </div>
     
@@ -140,9 +159,8 @@
         </div>
         
         <h4>ОСТАВЬ МНЕ СООБЩЕНИЕ</h4>
-        <textarea name="name1" id="1" cols="20" rows="10" placeholder="Имя"></textarea>
-        <textarea name="name2" id="2" cols="20" rows="10" placeholder="Email"></textarea>
-        <br>
+        <input name="name1" id="1" placeholder="Имя">
+        <input name="name2" id="2" placeholder="Email">
         <textarea name="name3" id="3" cols="30" rows="10" placeholder="Сообщение"></textarea>
         
         <input type="Submit" value="Отправить">
