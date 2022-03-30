@@ -309,8 +309,8 @@ nav {
   height: 810px;
   width: 100%;  
     background: url(../img/contact%D0%A4%D0%BE%D0%BD.png);
-    padding-left: 590px;
-    padding-right: 590px;
+    padding-left: 570px;
+    padding-right: 570px;
 }
 .contacts h3{
     text-align: center;
@@ -349,6 +349,50 @@ nav {
     font-size: 25px;
     font-weight: 500;
 }
+.contactsButton {
+    color: #fff;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    display:block;
+    margin:auto;
+    margin-top: 34px;
+    padding: 12px 17px 12px 17px;
+    background-color: rgba(255,255,255,0);
+}
+.contactName {
+    height: 38px;
+    width: 350px;
+    margin-right: 38px;
+    color: #5d5d5e;
+    background-color: rgba(210, 214, 220, 0.9);
+    padding-left: 12px;
+    font-size: 15px;
+    
+}
+
+.contactMail{
+    height: 38px;
+    width: 350px;
+    color: #5d5d5e;
+    background-color: rgba(210, 214, 220, 0.9);
+    padding-left: 12px;
+    font-size: 15px;
+}
+
+.contacMsg {
+    height: 95px;
+    width: 742px;
+    color: #5d5d5e;
+    background-color: rgba(210, 214, 220, 0.9);
+    padding-left: 12px;
+    padding-top: 10px;
+    font-size: 15px;
+}
+
+
+
+
+
 .polosha {
     
     padding-top: 30px;
@@ -357,7 +401,19 @@ nav {
 }
 
 
-.footer {
+
+
+
+
+
+footer {
   height: 100px;
-  width: 100%;   
+  width: 100%;  
+    background-color: #354051;
+    text-align: center;
+    color: #fff;
+    line-height: 100px;
+    font-weight: 600;
 }
+
+
