@@ -12,7 +12,9 @@ body{
 nav {
     width: 100%;
     height: 60px;
-    background-color: #344051
+    background-color: #344051;
+    position: fixed;
+    
 }
 
 
@@ -24,6 +26,51 @@ nav {
     line-height: 60px;
     padding-left: 388px;
     float: left;
+    -webkit-animation: comming 2s;
+    -o-animation: comming 2s;
+    animation:comming 2s ;
+}
+
+@-webkit-keyframes comming {
+    from { 
+    opacity: 0;
+    }
+    to {opacity: 1;  }
+}
+@-o-keyframes comming {
+    from { 
+    opacity: 0;
+    }
+    to {opacity: 1;  }
+}
+@-moz-keyframes comming {
+    from { 
+    opacity: 0;
+    }
+    to {opacity: 1;  }
+}
+@keyframes comming {
+    from { 
+    opacity: 0;
+    }
+    to {opacity: 1;  }
+}
+
+@-webkit-keyframes topshift {
+    from { opacity: 0; margin-top: -80px; }
+    to { opacity: 1; margin-top: 0px; }
+}
+@-o-keyframes topshift {
+    from { opacity: 0; margin-top: -80px; }
+    to { opacity: 1; margin-top: 0px; }
+}
+@-moz-keyframes topshift {
+    from { opacity: 0; margin-top: -80px; }
+    to { opacity: 1; margin-top: 0px; }
+}
+@keyframes topshift {
+    from { opacity: 0; margin-top: -80px; }
+    to { opacity: 1; margin-top: 0px; }
 }
 
 .menu{
@@ -37,11 +84,51 @@ nav {
     color: #fff;
     margin-right: 40px;
     font-size: 16px;
+    opacity: 0;
     text-transform: uppercase;
+    -webkit-animation:topshift 0.5s forwards;
+    -o-animation:topshift 0.5s  forwards;
+    animation:topshift 0.5s  forwards;
 }
-.main{
+.menu li:nth-child(1){
+    animation-delay: 0.4s;
+}
+.menu li:nth-child(2){
+    animation-delay: 0.8s;
+}
+.menu li:nth-child(3){
+    animation-delay: 1.2s;
+}
+.menu li:nth-child(4){
+    animation-delay: 1.6s;
+}
+.menu li:nth-child(5){
+    animation-delay: 2.0s;
+}
+.menu li:nth-child(6){
+    animation-delay: 2.4s;
+}
+
+.menu li a{
+    display: inline-block;
+    color: white;
+    transition: all 0.4s;
+    transform: scale(1);
+}
+.menu li a:visited{
+    color: white;
+}
+.menu li a:hover{
+    
+    transform: scale(1.2);
+}
+.menu li a:active{
+    color: #f6900b;
+    transform: scale(1.2);
+}
+main {
     width: 100%;
-    height: 1000px; 
+    height: 100%; 
     background: url(../img/%D0%9F%D0%B0%D1%80%D0%B5%D0%BD%D1%8C.png) 90% 100%/auto 85% no-repeat, url(../img/%D1%84%D0%BE%D0%BD.png) center/cover no-repeat;
 }
 
@@ -50,10 +137,17 @@ nav {
 
 
 .title_container{
+    opacity: 0;
     margin: 432px 0px 0px 404px;
     float: left;
     color: #2c384a;
     text-align: center;
+    -webkit-animation: titlecontComming 1s ease forwards;
+    -o-animation: titlecontComming 1s ease forwards;
+    animation:titlecontComming 1s ease forwards;
+    -webkit-animation-delay: 2.4s;
+    -o-animation-delay:2.4s ;
+    animation-delay: 2.4s;
 }
 .title_container h1{
     font-size: 60px;
@@ -74,6 +168,35 @@ nav {
     font-size: 13px;
     padding: 0px 16px;
     margin: 58px 14px 0px 14px;
+    transform: scale(1);
+}
+
+.title_container input{
+    transition: all 1s ;
+}
+.title_container input:hover{
+    color:#eaecf0;
+    background: #2c384a;
+    transform: scale(1.2);
+}
+.title_container input:active{
+    transform: scale(1.2);
+}
+@-webkit-keyframes titlecontComming {
+    from { opacity: 0; margin-left: -500px; }
+    to { opacity: 1; margin-left: 404px; }
+}
+@-o-keyframes titlecontComming {
+    from { opacity: 0; margin-left: -500px; }
+    to { opacity: 1; margin-left: 404px; }
+}
+@-moz-keyframes titlecontComming {
+    from { opacity: 0; margin-left: -500px; }
+    to { opacity: 1; margin-left: 404px; }
+}
+@keyframes titlecontComming {
+    from { opacity: 0; margin-left: -500px; }
+    to { opacity: 1; margin-left: 404px; }
 }
 
 
@@ -107,8 +230,14 @@ nav {
     color: #6d7682;
     padding: 0px 11px 0px 25px;
     background: url(../img/%D0%B8%D0%BA%D0%BE%D0%BD%D0%BA%D0%B0.png) 5% 50% no-repeat;
+     
+    transition: all 1s ease;
+    transform: scale(1);
+    
 }
-
+.AboutMe input:hover {
+    transform: scale(1.1);
+}
 
 
 
@@ -118,6 +247,10 @@ nav {
     width: 100%;
     height: 520px;
     background: url(../img/%D0%BA%D0%B0%D1%80%D1%82%D0%B8%D0%BD%D0%BA%D0%B0%20%D1%84%D0%BE%D0%BD%D0%B0.png) ;
+     background-attachment: fixed;
+     background-position: center center;
+     background-repeat: no-repeat;
+     background-size: cover;
     padding-left: 200px;
     padding-right: 200px;
     
@@ -171,9 +304,10 @@ nav {
     float: left;
 }
 .casesNameProject{
+    
     float: left;
     padding-top: 33px;
-    margin-left: 85px;
+    margin-left: 90px;
 }
 
 .casesClient h4{
@@ -192,7 +326,21 @@ nav {
     color: #fff;
     padding: 13px 41px 13px 41px;
     border-radius: 5px;
+
+    transition: all 1s;
+    transform: scale(1);
 }
+.casesClient input:hover{
+    transform: scale(1.1);
+}
+
+.casesClient input:active{
+    transform: scale(1.1);
+    color: #63b5ae;
+    background-color: #fff;
+    border: 1px solid #63b5ae;
+}
+
 .casesNameProject h4{
     font-size: 25px;
     font-weight: 700;
@@ -246,7 +394,11 @@ nav {
 .SomeStatistics {
   height: 500px;
   width: 100%; 
-  background: url(../img/%D1%84%D0%BE%D0%BDstat.png);
+  background: url(../img/%D1%84%D0%BE%D0%BDstat.png) ;
+    background-attachment: fixed;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
   padding-left: 350px;
   padding-right: 350px;
 }
@@ -350,15 +502,27 @@ nav {
     font-weight: 500;
 }
 .contactsButton {
+    display:block;
     color: #fff;
     border: 2px solid #fff;
     border-radius: 5px;
-    display:block;
+    
     margin:auto;
     margin-top: 34px;
     padding: 12px 17px 12px 17px;
     background-color: rgba(255,255,255,0);
+    
+    transition: all 1s easy;
+    transform: scale(1);
 }
+.contactsButton:hover {
+    transform: scale(1.2);
+    background-color: rgba(255,255,255,1);
+    color: #0e1929;
+}
+
+
+
 .contactName {
     height: 38px;
     width: 350px;
@@ -414,6 +578,37 @@ footer {
     color: #fff;
     line-height: 100px;
     font-weight: 600;
+}
+
+
+.preloader {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+  background: #fff;
+  z-index: 1001;
+}
+
+.preloader__image {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  width: 200px;
+  height: 200px;
+  
+  background: url('../img/zhaba.gif') no-repeat; 
+}
+
+.loaded_hiding .preloader {
+  transition: 0.5s opacity;
+  opacity: 0;
+}
+
+.loaded .preloader {
+  display: none;
 }
 
 
