@@ -8,6 +8,7 @@
     <meta property="og:title" content="Its my first page...">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/reset.css"> 
+    <link rel="stylesheet" href="css/bootstrap.min.css"> 
     <link rel="stylesheet" href="css/style.css">
     <title>Dmitry - WebDevelop</title>
 </head>
@@ -21,8 +22,10 @@
     
     <header>
         <nav>
-            <div class="logo">Dmitry </div>
-            <div class="menu"> 
+           <div class="container">
+               <div class="row">
+                   <div class="col-xl-2 col-lg-1 col-7"><div class="logo">Dmitry </div></div>
+                   <div class="col-xxl-6 col-xl-8 col-lg-10 offset-xxl-4 offset-xl-2 offset-lg-1 d-none d-lg-block"> <div class="menu"> 
                <ul>
                 <li><a href="#">Обо мне</a></li>
                 <li><a href="#">Услуги</a></li>
@@ -31,72 +34,151 @@
                 <li><a href="#">Отзывы</a></li>
                 <li><a href="#">Контакты</a></li>
                </ul>
+            </div></div>
+              <div class="col-5 d-flex d-lg-none flex-column justify-content-center align-items-end">
+               <div class="dropdown">
+                  <a class=" btn-outline-secondary dropdown-toggle white-btn" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">Навигация</a>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                        <li><a class="dropdown-item" href="#">Обо мне</a></li>
+                        <li><a class="dropdown-item" href="#">Услуги</a></li>
+                        <li><a class="dropdown-item" href="#">Кейсы</a></li>
+                        <li><a class="dropdown-item" href="#">Прайс</a></li>
+                        <li><a class="dropdown-item" href="#">Отзывы</a></li>
+                        <li><a class="dropdown-item" href="#">Контакты</a></li>
+                          </ul>
+                </div>    
+                  </div> 
+               </div>
             </div>
         </nav>
     </header>
     
+    
+    
     <main>
-       <div class="title_container">
+      <div class="container h-100">
+        <div class="row h-100 align-items-center ">
+         <div class="col-6  pt-5">
+          <div class="title_container mt-5">
         <h1> Привет <br> Я Дмитрий</h1>
         <h4> Frontend разработчик</h4>
         <input type="button" value="Обо мне">
         <input type="button" value="Мои работы">
        </div>
+      </div></div></div>
+       
     </main>
     
     <section class="AboutMe">
-        <h2>ОБО МНЕ</h2>
-        <div class="polosha"><img src="../src/img/polosha.png" alt=""></div>
-        <img class="imgCircle" src="../src/img/%D1%84%D0%BE%D1%82%D0%BA%D0%B0.png" alt="">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente eveniet voluptatem ut. Ea soluta ab et quasi dolorem minus pariatur sequi repudiandae, accusantium perspiciatis. Eaque eos voluptate non laboriosam. Ad.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem soluta, rem voluptas explicabo ullam doloribus. Reprehenderit id quod ut error, non aspernatur quia quo, quisquam qui pariatur laudantium corrupti eos?</p>
-        <input type="button" value="Скачать резюме">
+       <div class="container">
+           <div class="col"><h2>ОБО МНЕ</h2></div>
+            <div class="polosha"><img src="../src/img/polosha.png" alt=""></div>
+            <img class="imgCircle" src="../src/img/%D1%84%D0%BE%D1%82%D0%BA%D0%B0.png" alt="">
+            <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente eveniet voluptatem ut. Ea soluta ab et quasi dolorem minus pariatur sequi repudiandae, accusantium perspiciatis. Eaque eos voluptate non laboriosam. Ad.</p>
+           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem soluta, rem voluptas explicabo ullam doloribus. Reprehenderit id quod ut error, non aspernatur quia quo, quisquam qui pariatur laudantium corrupti eos?</p>
+            <input type="button" value="Скачать резюме">
+        
+        </div>
     </section>
     
-    <section class="WhatCanDo">
+    <section class="WhatCanDo pb-5">
+       
         <h2>ЧТО Я УМЕЮ</h2>
         <div class="polosha"><img src="../src/img/polosha.png" alt=""></div>
-        <div class="WCIDItem">
+        <div class="container">
+        <div class="row justify-content-around d-none d-md-flex">
+        
+        <div class="col-3"><div class="WCIDItem">
            <div class="WCIDIcon"><img src="../src/img/%D0%BD%D0%BE%D1%83%D1%82.png" alt=""></div>
            <h6>Разработка</h6>
            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat, adipisci!</p> 
-        </div>
-        <div class="WCIDItem">
+        </div></div>
+        
+        <div class="col-3"> <div class="WCIDItem">
            <div class="WCIDIcon"><img src="../src/img/%D0%B7%D0%BD%D0%B0%D0%BA.png" alt=""></div>
            <h6>Веб-дизайн</h6>
            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat, adipisci!</p> 
-        </div>
-        <div class="WCIDItem">
+        </div></div>
+        
+        <div class="col-3"> <div class="WCIDItem">
            <div class="WCIDIcon"><img src="../src/img/%D1%80%D0%B0%D0%BA%D0%B5%D1%82%D0%B0.png" alt=""></div>
            <h6>CEO-оптимизация</h6>
            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat, adipisci!</p> 
-        </div>
-        <div class="WCIDItem">
+        </div></div>
+        
+        <div class="col-3"><div class="WCIDItem">
           <div class="WCIDIcon"><img src="../src/img/%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%BE%D1%84%D0%BE%D0%BD.png" alt=""></div>
            <h6>Маркетинг</h6>
            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat, adipisci!</p> 
+        </div></div>
+        
         </div>
         
+        <div class="row d-block d-md-none">
+         <div class="col-12"><div class="WCIDItemBeforeMD">
+           <div class="WCIDIcon"><img src="../src/img/%D0%BD%D0%BE%D1%83%D1%82.png" alt=""></div>
+           <h6>Разработка</h6>
+           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat, adipisci!</p> 
+        </div></div>
+        
+        <div class="col-12"> <div class="WCIDItemBeforeMD">
+           <div class="WCIDIcon"><img src="../src/img/%D0%B7%D0%BD%D0%B0%D0%BA.png" alt=""></div>
+           <h6>Веб-дизайн</h6>
+           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat, adipisci!</p> 
+        </div></div>
+        
+        <div class="col-12"> <div class="WCIDItemBeforeMD">
+           <div class="WCIDIcon"><img src="../src/img/%D1%80%D0%B0%D0%BA%D0%B5%D1%82%D0%B0.png" alt=""></div>
+           <h6>CEO-оптимизация</h6>
+           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat, adipisci!</p> 
+        </div></div>
+        
+        <div class="col-12"><div class="WCIDItemBeforeMD">
+          <div class="WCIDIcon"><img src="../src/img/%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%BE%D1%84%D0%BE%D0%BD.png" alt=""></div>
+           <h6>Маркетинг</h6>
+           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat, adipisci!</p> 
+        </div></div>   
+            
+            
+        </div>
+        </div>
     </section>
     
     <section class="cases">
+      <div class="container">
        <h2>КЕЙСЫ</h2>
        <div class="polosha"><img src="../src/img/polosha.png" alt=""></div>
         <p class="casesTitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic consequuntur facilis aspernatur doloremque atque ea dolorum nulla animi, at illo.</p>
-        <img class="casesImg" src="../src/img/%D1%84%D0%BE%D1%82%D0%BA%D0%B0cases.png" alt="">
-        <div class="casesClient"><h4>CLIENT:</h4>
-        <p>Какая то компания</p>
-        <h4>WEBSITE</h4>
-        <p>https://somedomain.com</p>
-        <input type="button" value="VISIT OUR SITE">
+        <div class="row mb-4">
+        <img class="casesImg" src="../src/img/%D1%84%D0%BE%D1%82%D0%BA%D0%B0cases.png" alt=""></div>
+        
+        <div class="row ">
+            <div class="col-4">
+                <div class="casesClient"><h4>CLIENT:</h4>
+                <p>Какая то компания</p>
+                <h4>WEBSITE</h4>
+                <p>https://somedomain.com</p>
+                <input type="button" value="Перейти на сайт">
+        </div></div>
+        
+        <div class="col-8">
+            <div class="casesNameProject">
+                <h4>Название проекта</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea est maxime iusto ex, officia cum, porro consequuntur nisi delectus quo!</p></div></div>
         </div>
-        <div class="casesNameProject">
-        <h4>Название проекта</h4>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea est maxime iusto ex, officia cum, porro consequuntur nisi delectus quo!</p></div>
+        
+        
+        </div>
     </section>
     
-    <section class="CalculateCost">
-     <h2>РАСЧЕТ СТОИМОСТИ</h2>
+    <section class="CalculateCost pb-5">
+    <div class="container ">
+    <div class="row justify-content-around">
+    
+        
+        <div class="col-10">
+           <div class="containerCosts">
+            <h2>РАСЧЕТ СТОИМОСТИ</h2>
      <div class="polosha"><img src="../src/img/polosha.png" alt=""></div>
       <h3>ТИП САЙТА</h3>
       <div class="CalcListItem">
@@ -126,77 +208,128 @@
       <img class= "CalcItog" src="../src/img/%D0%BB%D0%B8%D0%BD%D0%B8%D1%8F%20%D0%BF%D0%BE%D0%B4%D0%B8%D1%82%D0%BE%D0%B3%D0%B0.png" alt="">
       <p>Сроки</p>
       <p>Стоимость</p>
+       
+       <input type="button" value="Оставить заявку">
+        </div>
+        </div>
+        
+    
+    </div>
+     
+      
+    </div>
     </section>
     
-    <section class="SomeStatistics">
+    <section class="SomeStatistics pb-5">
         <h2>НЕМНОГО СТАТИСТИКИ</h2>
         <div class="polosha"><img src="../src/img/polosha.png" alt=""></div>
-        <div class="StatItem">
-            <div class="StatIcon"><img src="../src/img/stat%D1%81%D0%BC%D0%B0%D0%B9%D0%BB.png" alt=""></div>
-            <h4>120</h4>
-            <p>Счастливых клиентов</p>
-        </div>
-        <div class="StatItem">
-            <div class="StatIcon"><img src="../src/img/stat%D1%81%D0%BA%D0%BE%D0%B1%D0%BA%D0%B8.png" alt=""></div>
-            <h4>4600</h4>
-            <p>Часов работы</p>
-        </div>
-        <div class="StatItem">
-            <div class="StatIcon"><img src="../src/img/stat%D0%B3%D0%B0%D0%BB%D0%BE%D1%87%D0%BA%D0%B0.png" alt=""></div>
-            <h4>340</h4>
-            <p>Проектов завершено</p>
-        </div>
-        <div class="StatItem">
-            <div class="StatIcon"><img src="../src/img/stat%D0%BA%D1%83%D0%B1%D0%BE%D0%BA.png" alt=""></div>
-            <h4>23</h4>
-            <p>Наград получено</p>
-        </div>
+        <div class="container">
+        <div class="row justify-content-around d-none d-md-flex">
+            <div class="col-3"><div class="StatItem">
+                <div class="StatIcon"><img src="../src/img/stat%D1%81%D0%BC%D0%B0%D0%B9%D0%BB.png" alt=""></div>
+                <h4>120</h4>
+                <p>Счастливых клиентов</p>
+            </div></div>
+            <div class="col-3"> <div class="StatItem">
+                <div class="StatIcon"><img src="../src/img/stat%D1%81%D0%BA%D0%BE%D0%B1%D0%BA%D0%B8.png" alt=""></div>
+                <h4>4600</h4>
+                <p>Часов работы</p>
+            </div></div>
+            <div class="col-3"> <div class="StatItem">
+                <div class="StatIcon"><img src="../src/img/stat%D0%B3%D0%B0%D0%BB%D0%BE%D1%87%D0%BA%D0%B0.png" alt=""></div>
+                <h4>340</h4>
+                <p>Проектов завершено</p>
+            </div></div>
+            <div class="col-3"><div class="StatItem">
+                <div class="StatIcon"><img src="../src/img/stat%D0%BA%D1%83%D0%B1%D0%BE%D0%BA.png" alt=""></div>
+                <h4>23</h4>
+                <p>Наград получено</p>
+        </div></div>
+       </div>
+       <div class="row justify-content-around d-flex d-md-none"> 
+    
+      <div class="col-6"><div class="StatItemBeforeMD">
+                <div class="StatIcon"><img src="../src/img/stat%D1%81%D0%BC%D0%B0%D0%B9%D0%BB.png" alt=""></div>
+                <h4>120</h4>
+                <p>Счастливых клиентов</p>
+            </div></div>
+      <div class="col-6"><div class="StatItemBeforeMD">
+                <div class="StatIcon"><img src="../src/img/stat%D1%81%D0%BA%D0%BE%D0%B1%D0%BA%D0%B8.png" alt=""></div>
+                <h4>4600</h4>
+                <p>Часов работы</p>
+            </div></div>
+      <div class="col-6"><div class="StatItemBeforeMD">
+                <div class="StatIcon"><img src="../src/img/stat%D0%B3%D0%B0%D0%BB%D0%BE%D1%87%D0%BA%D0%B0.png" alt=""></div>
+                <h4>340</h4>
+                <p>Проектов завершено</p>
+            </div></div>
+      <div class="col-6"><div class="StatItemBeforeMD">
+                <div class="StatIcon"><img src="../src/img/stat%D0%BA%D1%83%D0%B1%D0%BE%D0%BA.png" alt=""></div>
+                <h4>23</h4>
+                <p>Наград получено</p>
+        </div></div>
+      </div>
+       
+        </div> 
     </section>
     
-    <section class="reviews">
+    <section class="reviews pb-5">
+       <div class="container">
         <h2>ОТЗЫВЫ</h2>
         <div class="polosha"><img src="../src/img/polosha.png" alt=""></div>
-        <img src="../src/img/rev%D1%84%D0%BE%D1%82%D0%BA%D0%B0.png" alt="">
+        <img class="reviewsImg" src="../src/img/rev%D1%84%D0%BE%D1%82%D0%BA%D0%B0.png" alt="">
         <div class="ReviewItem">
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam, quasi.</p>
             <p><b>Михаил</b>, Ген. Директор Газпром</p>
         </div>
+        </div>
     </section>
     
-    <section class="contacts">
+    <section class="contacts pb-5">
+       <div class="container">
         <h3>МОИ КОНТАКТЫ</h3>
         <div class="polosha"><img src="../src/img/polosha.png" alt=""></div>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem, soluta.</p>
         
-        
-        <div class="ContactItem">
+        <div class="row justify-content-around">
+           <div class="col-lg-2 col-0"></div>
+            <div class="col-lg-2 col-3"><div class="ContactItem">
             <img src="../src/img/contact%D0%B3%D0%B5%D0%BE.png" alt="">
             <h4>Санкт-Петербург</h4>
-        </div>
-        <div class="ContactItem">
+        </div></div>
+            
+            <div class="col-lg-2 col-3"><div class="ContactItem">
            <img src="../src/img/contact%D0%BA%D0%BE%D0%BD%D0%B2%D0%B5%D1%80%D1%82.png" alt="">
             <h4>mail@mail.ru</h4>
-        </div>
-        <div class="ContactItem">
+        </div></div>
+            
+            <div class="col-lg-2 col-3"> <div class="ContactItem">
            <img src="../src/img/contact%D1%82%D1%80%D1%83%D0%B1%D0%B0.png" alt="">
             <h4>+7 (999) 999-99-99</h4>
+        </div></div>
+        <div class="col-lg-2 col-0"></div>
         </div>
         
-        <br>
-        <br>
-        <br>
-        <br>
         <h5>ОСТАВЬТЕ МНЕ СООБЩЕНИЕ</h5>
-        <input class="contactName" name="name1" id="1" placeholder="Имя">
-        <input class="contactMail" name="name2" id="2" placeholder="Email">
-        <br>
-        <br>
-        <textarea class="contacMsg" name="name3" id="3" cols="30" rows="10" placeholder="Сообщение"></textarea>
-        <br>
+        
+        <div class="row pb-4">
+        <div class="col-2"></div>
+        <div class="col-4"> <input class="contactName" name="name1" id="1" placeholder="Имя"></div>
+        <div class="col-4"><input class="contactMail" name="name2" id="2" placeholder="Email"></div>
+        <div class="col-2"></div>
+        </div>
+        
+        <div class="row ">
+           <div class="col-2"></div>
+            <div class="col-8"> <textarea class="contacMsg" name="name3" id="3" cols="30" rows="10" placeholder="Сообщение"></textarea>
+            </div>
+            <div class="col-2"></div>
+        </div>
+        
         <input class="contactsButton" type="button" value="Отправить">
+        
+        </div>
     </section>
-    
-
     
     <footer>
         <p footerText>Copyright 2021 </p>
@@ -211,5 +344,6 @@
     }, 500);
   }
 </script>
+    <script src="js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
