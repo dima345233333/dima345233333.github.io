@@ -639,7 +639,13 @@ main {
     padding-top: 10px;
     font-size: 15px;
 }
-
+.ContactBottomIcon{
+    display:block;
+    margin:auto;
+    height: 100px;
+    z-index: 10;
+    
+}
 
 
 
